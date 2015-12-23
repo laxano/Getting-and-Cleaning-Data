@@ -15,18 +15,18 @@ For each record it is provided:
 - An identifier of the subject who carried out the experiment.
 
 The script run_analysis.R performs the following tasks:
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive variable names. 
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+- Merges the training and the test sets to create one data set.
+- Extracts only the measurements on the mean and standard deviation for each measurement. 
+- Uses descriptive activity names to name the activities in the data set
+- Appropriately labels the data set with descriptive variable names. 
+- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 <h1>Code book</h1>
 
 The script produces the output file tidy.txt. The file includes:
-1. column subject: person identifier that used the samsung device
-2. column activityName: activity carried out by the person (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-3. a list of columns refering to measurements from the accelerometer and gyroscope.
+- column subject: person identifier that used the samsung device
+- column activityName: activity carried out by the person (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+- a list of 66 columns refering to measurements from the accelerometer and gyroscope.
 Note the values in those columns are the average for each activity and each subject.  
 
 A detailed description of tidy.txt follows (using the str command for the data frame used to produce the file). 
